@@ -1,10 +1,14 @@
 {
   "domain": "sun_tracker",
   "name": "Sun Tracker",
-  "codeowners": [],
+  "codeowners": [
+    "@diy3d-de"
+  ],
   "config_flow": true,
+  "documentation": "https://github.com/diy3d-de/sun-tracker",
   "integration_type": "entity",
   "iot_class": "calculated",
+  "issue_tracker": "https://github.com/diy3d-de/sun-tracker/issues",
   "requirements": [],
   "version": "1.0.0"
 }
