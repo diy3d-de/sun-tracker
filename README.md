@@ -3,7 +3,6 @@
 `Sun Tracker` ist eine HACS-kompatible Custom-Integration fuer Home Assistant. Sie nutzt den in Home Assistant konfigurierten Standort, berechnet daraus den aktuellen Sonnenstand und liefert auch die komplette Sonnenbahn fuer den aktuellen Tag.
 
 [![Open your Home Assistant instance and open this repository in HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=diy3d-de&repository=sun-tracker&category=integration)
-[![Open your Home Assistant instance and start setting up Sun Tracker.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=sun_tracker)
 
 ## Enthalten
 
@@ -49,7 +48,8 @@ Der Repo-Inhalt ist jetzt so vorbereitet, dass du ihn direkt als `Custom Reposit
 1. Oben auf den HACS-Button klicken.
 2. Das Repository in HACS bestaetigen und installieren.
 3. Home Assistant neu starten.
-4. Oben auf den `Add Integration`-Button klicken oder in `Einstellungen -> Geraete & Dienste` nach `Sun Tracker` suchen.
+4. Danach in `Einstellungen -> Geraete & Dienste -> Integration hinzufuegen` nach `Sun Tracker` suchen.
+5. Wenn `Sun Tracker` nicht sofort erscheint, Browser-Cache leeren und die Seite neu laden.
 
 ## Kartenansicht
 
@@ -67,4 +67,4 @@ radius_km: 150
 
 ## Wichtiger Hinweis zu One-Click
 
-Der One-Click-Install fuer HACS ist jetzt eingebaut ueber den My-Home-Assistant-Link oben. Fuer die Karten-Ressource braucht Home Assistant weiterhin einmalig einen Eintrag unter `Dashboards -> Ressourcen`, weil das der offizielle Frontend-Weg fuer Custom Cards ist. Die JavaScript-Datei wird aber bereits von der Integration selbst ausgeliefert, deshalb entfaellt jedes manuelle Kopieren von Dateien.
+Der One-Click-Install fuer HACS ist jetzt eingebaut ueber den My-Home-Assistant-Link oben. Der direkte `config_flow_start`-Link wurde bewusst entfernt, weil Home Assistant die Integration erst nach der HACS-Installation und einem Neustart sicher erkennt. Fuer die Karten-Ressource braucht Home Assistant weiterhin einmalig einen Eintrag unter `Dashboards -> Ressourcen`, weil das der offizielle Frontend-Weg fuer Custom Cards ist. Die JavaScript-Datei wird aber bereits von der Integration selbst ausgeliefert, deshalb entfaellt jedes manuelle Kopieren von Dateien.
