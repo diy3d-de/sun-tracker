@@ -1,0 +1,10 @@
+{
+  "domain": "sun_tracker",
+  "name": "Sun Tracker",
+  "codeowners": [],
+  "config_flow": true,
+  "integration_type": "entity",
+  "iot_class": "calculated",
+  "requirements": [],
+  "version": "1.0.0"
+}
